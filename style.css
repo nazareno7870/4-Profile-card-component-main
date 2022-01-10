@@ -1,0 +1,118 @@
+    :root{
+        --primary-dark-cyan:hsl(185, 75%, 39%);
+        --primary-dark-blue:hsl(229, 23%, 23%);
+        --primary-grayish-blue:hsl(227, 10%, 46%);
+        --dark-gray: hsl(0, 0%, 59%);
+    }
+    .attribution { 
+        margin-top: 20px;
+        font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        font-family: 'Kumbh Sans', sans-serif;
+        height: 100vh;
+        background-color: var(--primary-dark-cyan);
+        background-image: url("./images/bg-pattern-top.svg");
+        background-position: left -250px top -250px;
+        background-size: 500px;
+        background-repeat: no-repeat;
+
+    }
+
+    .fondo-bottom{
+        background: url("./images/bg-pattern-bottom.svg");
+        background-size: 500px;
+        background-repeat:  no-repeat;
+        background-position: right -250px bottom -250px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p{
+        font-size: 18px;
+    }
+    img{
+        max-width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+        position: relative;
+        border-radius: 18px;
+        background-color: #fff;
+
+    }
+    .top-image img{
+        height: 150px;
+        border-radius: 18px 18px 0 0 ;
+    }
+
+    .profile-img{
+        position: absolute;
+        margin: 0 auto;
+        top: 100px;
+        left: 0;
+        right: 0;
+        width: 100px;
+    }
+    .profile-img img{
+        height: 100px;
+        border-radius: 100%;
+        border: 6px solid #fff;
+    }
+    .profile-info{
+        display: flex;
+        flex-direction: column;
+        margin: 60px auto 0;
+        text-align: center;
+        padding-bottom: 25px;
+        width: 100%;
+        border-bottom: 1px solid rgba(192, 192, 192, 0.371);
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    span{
+        font-size: 19px;
+        font-weight: 400;
+        color: var(--dark-gray);
+    }
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--dark-gray);
+    }
+    .stats{
+        padding: 25px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .stats p{
+        margin-top: 10px;
+    }
+    @media (min-width: 768px) {
+        body{
+            background-position: left -100px top -250px;
+    
+        }
+    
+        .fondo-bottom{
+            background-position: right -100px bottom -250px;
+
+        }
+       
+    }
